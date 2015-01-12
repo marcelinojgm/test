@@ -6,20 +6,23 @@
  */
 public class Test
 {
-  /**
-   * imprima todos los múltiplos de 5 entre 10 y 95 
-   * (ambos extremos no incluidos).
-   */
+    /**
+     * imprima todos los múltiplos de 5 entre 10 y 95 
+     * (ambos extremos no incluidos).
+     */
     public void multiplesOfFive()
     {
-       int number = 10;
-        while (number < 95)
+        int start = 10;
+        int end   = 95;
+        
+        while (start < end)
         {
-            if(number%5 == 0)
+            start++;
+            if(start%5 == 0)
             {
-             System.out.println(number);
+                System.out.println(start);
             }
-            number++;
+            
         }
     }
 }
