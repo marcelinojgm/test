@@ -25,4 +25,23 @@ public class Test
             
         }
     }
+    
+    /**
+     * saque por pantalla la suma de los números comprendidos entre el 0 y el 10 
+     * (ambos incluidos)
+     */
+    public void sumValues()
+    {
+        int start = 0;
+        int end   = 10;
+        int sum   = 0;
+        
+        while(start <= end)
+        {
+            sum = sum + start;
+            start++;
+        }
+        System.out.println(sum);
+    }
+
 }
