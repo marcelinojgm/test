@@ -51,7 +51,7 @@ public class Test
     public void sumValuesInterval(int a, int b)
     {
         int sum   = 0;
-        
+
         //cambiamos los valores "a" por "b" 
         //si "a" es mayor que "b"
         if (b < a)
@@ -67,8 +67,27 @@ public class Test
             sum = sum + a;
             a++;
         }
-        
-         System.out.println(sum);
+
+        System.out.println(sum);
     }
 
+    /**
+     * devuelva verdadero si el parámetro n es primo 
+     * o falso en caso contrario.
+     */
+    public boolean isPrime(int n)
+    {
+        boolean prime = true;
+        int div = 2;
+        while (div < n && prime)
+        {
+            if(n % div == 0)
+            {
+                prime = false;
+            }
+            div++;
+        }
+        return prime;
+    }
 }
+
